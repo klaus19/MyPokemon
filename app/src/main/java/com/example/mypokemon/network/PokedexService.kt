@@ -1,5 +1,7 @@
 package com.example.mypokemon.network
 
+import com.example.mypokemon.model.PokemonInfo
+import com.example.mypokemon.model.PokemonResponse
 import com.skydoves.sandwich.ApiResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
