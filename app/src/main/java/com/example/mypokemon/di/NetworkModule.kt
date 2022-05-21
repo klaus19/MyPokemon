@@ -1,6 +1,8 @@
 package com.example.mypokemon.di
 
 import com.example.mypokemon.network.HttpInterceptor
+import com.example.mypokemon.network.PokedexClient
+import com.example.mypokemon.network.PokedexService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -33,4 +35,15 @@ object NetworkModule {
              .build()
     }
 
+    @Provides
+    @Singleton
+    fun providePokedexService(retrofit: Retrofit):PokedexService{
+        return  retrofit.create(PokedexService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun providePokedexClient(pokedexService: PokedexService):PokedexClient{
+        return PokedexClient(pokedexService)
+    }
 }
