@@ -159,6 +159,8 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit:$versions.androidxTestJunit"
     androidTestImplementation "com.android.support.test:runner:$versions.androidTestRunner"
     androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espressoVersion"
+
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
 }
 
 apply from: "$rootDir/spotless.gradle"
