@@ -10,7 +10,7 @@
 
         <variable
             name="vm"
-            type="com.skydoves.pokedex.ui.details.DetailViewModel" />
+            type="com.example.mypokemon.ui.details.DetailViewmodel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -39,7 +39,6 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/app_name"
-                style="@style/TextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
@@ -79,7 +78,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/header"
-                tools:text="skydoves" />
+                tools:text="Tejas" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/header"
