@@ -22,4 +22,5 @@ class DetailViewmodel @AssistedInject constructor(
 
 
 
+
 }

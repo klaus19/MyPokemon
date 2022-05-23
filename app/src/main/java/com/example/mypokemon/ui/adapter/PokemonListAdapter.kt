@@ -18,6 +18,8 @@ class PokemonListAdapter:BindingListAdapter<Pokemon,PokemonListAdapter.PokemonVi
         holder.bindPokemon(getItem(position))
 
 
+
+
     companion object{
 
         private val diffUtil = object : DiffUtil.ItemCallback<Pokemon>(){
